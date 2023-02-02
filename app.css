@@ -1,0 +1,111 @@
+* {
+    margin            : 0;
+    padding           : 15px;
+    border            : 65px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+@media(max-height: 400px) {
+    section {
+        max-width: 100%
+    }
+}
+
+body {
+    background-color: #00DBDE;
+    background-image: linear-gradient(60deg, #00DBDE 0%, #FC00FF 100%);
+
+}
+
+body,
+form,
+html,
+section {
+    height               : 100%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius   : 30px;
+    border-radius        : 20px;
+}
+
+form {
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    border          : 1px solid #8BC6EC;
+}
+
+form input {
+    background-color: #242F37;
+    color           : #ecf0f1;
+    border-radius   : 20px;
+    font-family     : "Scientific Calculator LCD", sans-serif;
+    font-size       : 20px;
+    text-align      : right;
+    padding         : 20px;
+    width           : 100%;
+}
+
+
+section {
+    margin   : 0 auto;
+    max-width: 500px;
+}
+
+
+.clear-all,
+.clear-one {
+    background-color: transparent;
+    border          : 5px solid #16bceb;
+    color           : #000;
+    font-family     : "Scientific Calculator LCD", sans-serif;
+    font-size       : 20px;
+    float           : left;
+    padding         : 0;
+    transition      : background-color 0.2s;
+    width           : 50%;
+    height          : 16.6%;
+}
+
+.clear-all:hover,
+.clear-one:hover {
+    background-color: #f39c12;
+    background-image: linear-gradient(135deg, #f39c12 0%, #9599E2 100%);
+    width           : 50%;
+    border          : 0;
+}
+
+.btn-number,
+.btn-operation,
+.btn-equal {
+    background-color: transparent;
+    border          : 5px solid #16bceb;
+    color           : #000;
+    font-family     : "Scientific Calculator LCD", sans-serif;
+    font-size       : 20px;
+    float           : left;
+    padding         : 0;
+    transition      : background-color 0.2s;
+    width           : 25%;
+    height          : 16.6%;
+}
+
+.btn-number:hover {
+    background-color: #e74c3c;
+    background-image: linear-gradient(147deg, #e74c3c 0%, #d4ed7a 74%);
+    width           : 25%;
+    border          : 0;
+}
+
+.btn-operation:hover {
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    width           : 25%;
+    border          : 0;
+}
+
+.btn-equal:hover {
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    width           : 25%;
+    border          : 0;
+}
