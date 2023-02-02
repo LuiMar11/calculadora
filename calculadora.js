@@ -22,19 +22,19 @@ function solve() {
             val1 = res.slice(0, i).join('');
             val2 = res.slice(i + 1, n).join('');
             resultado = parseFloat(val1) + parseFloat(val2);
-            document.getElementById('resultado').value = resultado;
+            document.getElementById('resultado').value = resultado.toFixed(3);
         }
         if (res[i] == "-") {
             val1 = res.slice(0, i).join('');
             val2 = res.slice(i + 1, n).join('');
             resultado = parseFloat(val1) - parseFloat(val2);
-            document.getElementById('resultado').value = resultado;
+            document.getElementById('resultado').value = resultado.toFixed(3);
         }
         if (res[i] == "*") {
             val1 = res.slice(0, i).join('');
             val2 = res.slice(i + 1, n).join('');
             resultado = parseFloat(val1) * parseFloat(val2);
-            document.getElementById('resultado').value = resultado;
+            document.getElementById('resultado').value = resultado.toFixed(3);
         }
         if (res[i] == "/") {
             val1 = res.slice(0, i).join('');
